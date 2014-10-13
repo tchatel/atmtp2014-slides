@@ -1,0 +1,32 @@
+{
+    "title": "Devoxx France 2014",
+    "sections": [
+        {"file": "data/intro/slides.md"},
+        {"file": "data/generalites/slides.md"},
+        {"file": "data/structure/slides.md"},
+        {"file": "data/controleurs/slides.md"},
+        {"file": "data/services/slides.md"},
+        {"file": "data/promesses/slides.md"},
+        {"file": "data/filtres/slides.md"},
+        {"file": "data/directives/slides.md"},
+        {"file": "data/tests/slides.md"},
+        {"file": "data/conclusion/slides.md"},
+
+        {}
+    ],
+    "all": [
+        {"file": "data/intro/slides.md"},
+
+
+        {"file": "data/test.md"},
+        {}
+    ],
+
+    "TODO": [
+        "augmenter la taille des <h3>",
+        "augmenter la taille du code (attention aux lignes longues sur les filtres",
+        "pixel blanc à gauche des subsections",
+        ""
+    ]
+
+}
