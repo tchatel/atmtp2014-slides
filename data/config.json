@@ -1,31 +1,34 @@
 {
-    "title": "Devoxx France 2014",
+    "title": "ATMP2014 Lisibilité du code",
     "sections": [
-        {"file": "data/intro/slides.md"},
-        {"file": "data/generalites/slides.md"},
-        {"file": "data/structure/slides.md"},
-        {"file": "data/controleurs/slides.md"},
-        {"file": "data/services/slides.md"},
-        {"file": "data/promesses/slides.md"},
-        {"file": "data/filtres/slides.md"},
-        {"file": "data/directives/slides.md"},
-        {"file": "data/tests/slides.md"},
-        {"file": "data/conclusion/slides.md"},
+        {"file": "data/1-intro/slides.md"},
+        {"file": "data/2-presentation/slides.md"},
+        {"file": "data/3-documentation/slides.md"},
+        {"file": "data/4-plan/slides.md"},
+        {"file": "data/5-fluent-interface/slides.md"},
+        {"file": "data/6-conclusion/slides.md"},
 
         {}
     ],
     "all": [
-        {"file": "data/intro/slides.md"},
+        {"file": "data/old/intro/slides.md"},
+        {"file": "data/old/generalites/slides.md"},
+        {"file": "data/old/structure/slides.md"},
+        {"file": "data/old/controleurs/slides.md"},
+        {"file": "data/old/services/slides.md"},
+        {"file": "data/old/promesses/slides.md"},
+        {"file": "data/old/filtres/slides.md"},
+        {"file": "data/old/directives/slides.md"},
+        {"file": "data/old/tests/slides.md"},
+        {"file": "data/old/conclusion/slides.md"},
 
 
-        {"file": "data/test.md"},
+        {"file": "data/old/test.md"},
         {}
     ],
 
     "TODO": [
-        "augmenter la taille des <h3>",
-        "augmenter la taille du code (attention aux lignes longues sur les filtres",
-        "pixel blanc à gauche des subsections",
+        "template et sponsors",
         ""
     ]
 

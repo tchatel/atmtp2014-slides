@@ -179,6 +179,15 @@ h1 code, h2 code, h3 code, li code {
 .slide .slide-content .smallest {
     font-size: 55%;
 }
+.smallcode .prettyprint {
+    font-size: 35px;
+}
+.smallercode .prettyprint {
+    font-size: 26px;
+}
+.smallestcode .prettyprint {
+    font-size: 20px;
+}
 .slide.big .slide-content {
     font-size: 120%;
 }
@@ -196,6 +205,10 @@ h1 code, h2 code, h3 code, li code {
 }
 .slide .slide-content .biggest {
     font-size: 200%;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
 }
 
 /* classes sur les slides : left, right, code, bullets */

@@ -28,9 +28,12 @@ div.background {
     background: black url(fond-devoxxfr.png) no-repeat 0 0;
 }
 
-
 div.slide-content table td {
     padding: 0.1em 1em 0.1em 1em;
+}
+
+div.slide {
+    line-height: 1.2;
 }
 
 div.slide.back {
