@@ -11,19 +11,6 @@
         {}
     ],
     "all": [
-        {"file": "data/old/intro/slides.md"},
-        {"file": "data/old/generalites/slides.md"},
-        {"file": "data/old/structure/slides.md"},
-        {"file": "data/old/controleurs/slides.md"},
-        {"file": "data/old/services/slides.md"},
-        {"file": "data/old/promesses/slides.md"},
-        {"file": "data/old/filtres/slides.md"},
-        {"file": "data/old/directives/slides.md"},
-        {"file": "data/old/tests/slides.md"},
-        {"file": "data/old/conclusion/slides.md"},
-
-
-        {"file": "data/old/test.md"},
         {}
     ],
 
