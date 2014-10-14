@@ -13,19 +13,53 @@ div.background {
     right: 0;
     top: 0;
     bottom: auto;
-    width: 1280px;
-    height: 720px;
+    width: 1024px;
+    height: 768px;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     border-width: 0;
 }
 */
 
+.slide {
+}
+
 .slide-content {
-    width: 1280px;
-    height: 720px;
+    display: table-cell;
+    width: 1024px;
+    height: 768px;
+    background: white url(fond-atmtp2014.png) no-repeat 0 0;
+    margin: 0;
     padding: 0;
-    background: black url(fond-devoxxfr.png) no-repeat 0 0;
+}
+.slide-content .content {
+    margin: 60px 0 0 0;
+    padding: 25px;
+}
+.nobackground .slide-content {
+    display: table-cell;
+    width: 1024px;
+    height: 768px;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+.nobackground .slide-content .content {
+    margin: 0;
+    padding: 0;
+}
+.nobackground .slide-content p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.slide.bullets ul li ul {
+    font-size: 0.8em;
+}
+.prettyprint {
+    margin: 0 0 0 1em;
+    padding: 0.8em;
 }
 
 div.slide-content table td {
@@ -70,7 +104,7 @@ div.slide.back img {
 
 .slide.subsection .content {
     color: #fff;
-    background-color: #000;
+    background-color: seagreen;
     margin: 0;
     padding: 6px 10px 3px 10px;
     border-radius: 0;

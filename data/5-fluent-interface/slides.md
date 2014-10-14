@@ -40,5 +40,5 @@
 
 !SLIDE bullets ===========================
 
-* vérification par le langage (si typé)
-* vérification par le lecteur (erreurs flagrantes)
+* vérification par le langage <span class="small">(si typé)</span>
+* vérification par le lecteur <span class="small">(erreurs flagrantes)</span>

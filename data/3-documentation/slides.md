@@ -14,6 +14,7 @@
 # les commentaires
 
 !NOTES ---------------------------
+
 Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 
 
@@ -25,7 +26,7 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 
 !SLIDE ===========================
 
-<img src="data/3-documentation/bad-157437_640.png" width="10%">
+<img src="data/3-documentation/bad-157437_640.png" width="20%">
 
 
 !SLIDE ===========================
@@ -34,6 +35,12 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 <br/>
 <img src="data/3-documentation/typewriter-28701_1280.png" width="30%">
 
+!NOTES ---------------------------
+
+- Comme pour la doc, on oublie souvent de mettre à jour les commentaires.
+- Les commentaires obsolètes peuvent être trompeurs, c'est pire que pas de commentaires du tout.
+- La vérité est dans le code, pas dans le commentaire.
+
 
 !SLIDE ===========================
 
@@ -41,6 +48,10 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 
     // Increment i
     i++;
+
+!NOTES ---------------------------
+
+- Ajoutent du volume et font perdre du temps à la lecture
 
 
 !SLIDE ===========================
@@ -53,7 +64,7 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 
 !SLIDE ===========================
 
-<img src="data/3-documentation/good-157436_640.png" width="10%">
+<img src="data/3-documentation/good-157436_640.png" width="20%">
 ## qu'est-ce qu'un bon commentaire ?
 
 
@@ -93,6 +104,7 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 # le nommage
 
 !NOTES ---------------------------
+
 - c'est le premier des commentaires
 - qui peut aussi être obsolète
     * (ex en formation, copier-coller sans changer le nommage)
@@ -106,6 +118,7 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 <img src="data/3-documentation/dictionary-390055_1280.jpg" width="40%">
 
 !NOTES ---------------------------
+
 - importance d'un accord sur les mots et leur sens
 - réf Borges : Pierre Ménard, auteur du Quichotte
 
@@ -119,10 +132,13 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 !SLIDE smallcode ===========================
 
      boolean isConstructor() {
-         return !isPartial() && "<init>".equals(name);
+         return !isPartial()
+             && "<init>".equals(name);
      }
+
      boolean isMethod() {
-         return !isPartial() && !isConstructor()
+         return !isPartial()
+             && !isConstructor()
              && !"<clinit>".equals(name);
      }
 

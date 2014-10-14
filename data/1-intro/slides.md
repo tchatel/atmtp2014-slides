@@ -1,28 +1,21 @@
-!SLIDE subsection ================
-
-# Introduction
-OLD, TODO
-
 !SLIDE ===========================
 
-### Du code labyrinthe au code lisible &nbsp;&nbsp;<span class="smaller">_par Thierry Chatel_</span>
-<img src="data/1-intro/Barcelona_Laverinto_Horta_09_JMM.JPG" width="35%">
+<img src="data/1-intro/Barcelona_Laverinto_Horta_09_JMM.JPG" width="50%">
 
 <div class="left">_“Je n'écris pas pour une petite élite dont je n'ai cure, ni pour cette entité platonique adulée qu'on surnomme la Masse. Je ne crois pas à ces deux abstractions, chères au démagogue. J'écris pour moi, pour mes amis et pour adoucir le cours du temps.”_</div>
 <br/>
-<div class="small">**Jorge Luis Borges.**</div>
-
-!NOTES ---------------------------
-Pour qui on écrit du code ?
-- pour l’ordinateur qui va l’exécuter (évidemment)
-    * alors pourquoi on ne code pas en langage machine / assembleur ?
-- pour les développeurs qui interviennent dessus (y compris soi-même)
-- pour le client qui le paye, et qui a envie que son investissement soit durable, ait de la valeur
+<div class="right small">**Jorge Luis Borges.**</div>
 
 
-!SLIDE ===========================
+!SLIDE subsection ================
 
-# TODO : sponsors ici ?
+# Introduction
+TODO: bio, 1ère page, dernière page, etc
+
+
+!SLIDE nobackground ===========================
+
+<img src="data/1-intro/sponsors.png" width="98%">
 
 
 !SLIDE ===========================
@@ -34,6 +27,14 @@ Pour qui on écrit du code ?
 
 <img src="data/1-intro/macbook-407126_1280.jpg" width="40%">
 ## coder pour qui ?
+
+!NOTES ---------------------------
+
+Pour qui on écrit du code ?
+- pour l’ordinateur qui va l’exécuter (évidemment)
+    * alors pourquoi on ne code pas en langage machine / assembleur ?
+- pour les développeurs qui interviennent dessus (y compris soi-même)
+- pour le client qui le paye, et qui a envie que son investissement soit durable, ait de la valeur
 
 
 !SLIDE ===========================
@@ -55,6 +56,7 @@ Pour qui on écrit du code ?
 ## _“don’t make me think”_
 
 !NOTES ---------------------------
+
 - on peut manipuler 5 ou 6 concepts en même temps au maximum
     * notre cerveau n'exécute pas naturellement le code (ou alors c'est très long)
     * il le lit, comme on lit un texte
@@ -74,7 +76,9 @@ Pour qui on écrit du code ?
 <img src="data/1-intro/money-322514_1280.jpg" width="40%">
 
 !NOTES ---------------------------
+
 - expliquer la métaphore
+- les intérêts de la dette se traduisent par un surcroît de travail quand il faut intervenir sur le code
 - jusqu’au surendettement technique, quand un projet coûte trop cher à maintenir, et qu’on n’a pas les moyens de le réécrire
 - la (mauvaise) lisibilité du code représente la plus grande part de la dette technique
     * on passe infiniment plus de temps à lire le code qu’à l’écrire

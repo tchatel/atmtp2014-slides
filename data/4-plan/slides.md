@@ -3,6 +3,7 @@
 # Plan
 
 !NOTES ---------------------------
+
 - au sens littéraire : structure d'un texte, schéma
 
 
@@ -41,12 +42,26 @@
     def streetName = user?.address?.street
 
 
-!SLIDE ===========================
+!SLIDE bullets ===========================
 
-TODO
-* limiter les imbrications au maximum
-* cacher les détails
-* niveau d'abstraction cohérent
+## comment ?
+
+
+!SLIDE bullets ===========================
+
+## fonctions courtes (15 lignes)
+* moins de duplication
+* plus facile à comprendre
+* plus facile à faire évoluer
+
+
+!SLIDE bullets ===========================
+
+## explicables en une phrase
+* une seule responsabilité
+* minimum d'imbrications
+* un seul niveau d'abstraction
+* séparer “quoi” / “comment”
 
 
 !SLIDE smallestcode ===========================
@@ -112,7 +127,6 @@ TODO
     private volatile transient Constructor<T> cachedConstructor;
     private volatile transient Class       newInstanceCallerCache;
 
-TODO enlever fond noir !
 
 
 !SLIDE smallestcode ===========================
@@ -186,6 +200,55 @@ TODO enlever fond noir !
     private volatile transient Constructor<T> cachedConstructor;
     private volatile transient Class       newInstanceCallerCache;
 
-TODO enlever fond noir !
 
 
+!SLIDE smallercode ===========================
+
+### détails gênants
+
+    void removeByNameAndSignature(Method toRemove) {
+        for (int i = 0; i < length; i++) {
+            Method m = methods[i];
+            if (m != null &&
+                m.getReturnType() == toRemove.getReturnType() &&
+                m.getName() == toRemove.getName() &&
+                arrayContentsEq(m.getParameterTypes(),
+                                toRemove.getParameterTypes())) {
+                methods[i] = null;
+            }
+        }
+    }
+
+
+!SLIDE smallercode ===========================
+
+### détails masqués
+
+    void removeByNameAndSignature(Method toRemove) {
+        for (int i = 0; i < length; i++) {
+            Method m = methods[i];
+            if (m != null && m.matchSignature(toRemove)) {
+                methods[i] = null;
+            }
+        }
+    }
+
+
+!SLIDE smallercode ===========================
+
+### niveaux d'imbrication
+
+    public void hideInnerTags(Node parent, String tagName) {
+        for (Node child : parent.getChildren()) {
+            if (child.isTag()
+                    && tagName.equals(((Tag)child).getName())) {
+                ((Tag) child).hide();
+            }
+        }
+    }
+
+    public void hideInnerTags(Node parent, String tagName) {
+        for (Tag tag : parent.getInnerTagsByName(tagName)) {
+            tag.hide();
+        }
+    }
