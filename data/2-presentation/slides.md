@@ -11,7 +11,7 @@
 
 !SLIDE ===========================
 
-<img src="data/2-presentation/800px-Alignement_Tilleuls_(terrasse_de_St-Germain)01.jpg" width="40%">
+<img src="data/2-presentation/800px-Alignement_Tilleuls_(terrasse_de_St-Germain)01.jpg" width="400px">
 # indentation
 
 !NOTES ---------------------------
@@ -25,7 +25,7 @@
 !SLIDE ===========================
 
 # code mort en commentaire
-<img src="data/2-presentation/800px-Payatas-Dumpsite_Manila_Philippines02.jpg" width="50%">
+<img src="data/2-presentation/800px-Payatas-Dumpsite_Manila_Philippines02.jpg" width="600px">
 
 !NOTES ---------------------------
 
@@ -35,7 +35,7 @@
 !SLIDE ===========================
 
 # conventions de codages
-<img src="data/2-presentation/2815097134_e8e82f852a_o.jpg" width="40%">
+<img src="data/2-presentation/2815097134_e8e82f852a_o.jpg" width="400px">
 
 ### règles simples - rigoureusement appliquées
 
@@ -46,7 +46,7 @@
 
 !NOTES ---------------------------
 
-- (contre-)exemples dans AngularJS :
+* (contre-)exemples dans AngularJS :
     * reloadOnSearch à true par défaut
     * tableau de transformRequest qui peut être remplacé par une fonction : ?
 

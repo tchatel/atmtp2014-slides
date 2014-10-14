@@ -40,5 +40,11 @@
 
 !SLIDE bullets ===========================
 
+<img src="data/5-fluent-interface/formes.jpg" width="260px">
+
 * vérification par le langage <span class="small">(si typé)</span>
 * vérification par le lecteur <span class="small">(erreurs flagrantes)</span>
+
+!NOTES ---------------------------
+
+Penser à la lisibilité quand on conçoit l'API.

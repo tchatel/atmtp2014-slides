@@ -21,6 +21,10 @@ div.background {
 }
 */
 
+body {
+    overflow:hidden;
+}
+
 .slide {
 }
 

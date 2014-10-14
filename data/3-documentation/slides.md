@@ -1,11 +1,11 @@
 !SLIDE subsection ================
 
-# Documentation dans le code
+# Documentation...<br/> dans le code
 
 
 !SLIDE ===========================
 
-<img src="data/3-documentation/800px-Bonanjo_-_Centre_de_documentation_et_information_urbanisme_(CUD)_04.JPG" width="40%">
+<img src="data/3-documentation/800px-Bonanjo_-_Centre_de_documentation_et_information_urbanisme_(CUD)_04.JPG" width="400px">
 ## pas de documentation externe
 
 
@@ -26,14 +26,14 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 
 !SLIDE ===========================
 
-<img src="data/3-documentation/bad-157437_640.png" width="20%">
+<img src="data/3-documentation/bad-157437_640.png" width="200px">
 
 
 !SLIDE ===========================
 
 ## obsolètes
 <br/>
-<img src="data/3-documentation/typewriter-28701_1280.png" width="30%">
+<img src="data/3-documentation/typewriter-28701_1280.png" width="350px">
 
 !NOTES ---------------------------
 
@@ -42,9 +42,11 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 - La vérité est dans le code, pas dans le commentaire.
 
 
-!SLIDE ===========================
+!SLIDE smallcode ===========================
 
 ## inutiles
+
+<br/>
 
     // Increment i
     i++;
@@ -56,15 +58,19 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 
 !SLIDE ===========================
 
-## _“Don’t comment bad code — rewrite it.”_
-<img src="data/3-documentation/Brian_kernighan2.gif" width="15%">
-### Brian W. Kernighan and P. J. Plaugher
+### _“Don’t comment bad code — rewrite it.”_
+
+</br/>
+<div class="left">
+<img src="data/3-documentation/Brian_kernighan2.gif" width="150px"></br/>
+Brian W. Kernighan and P. J. Plaugher
+</div>
 
 
 
 !SLIDE ===========================
 
-<img src="data/3-documentation/good-157436_640.png" width="20%">
+<img src="data/3-documentation/good-157436_640.png" width="200px">
 ## qu'est-ce qu'un bon commentaire ?
 
 
@@ -115,7 +121,7 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 
 ## vocabulaire commun
 ### _“métaphore”_ (XP), _“ubiquitous language”_ (DDD)
-<img src="data/3-documentation/dictionary-390055_1280.jpg" width="40%">
+<img src="data/3-documentation/dictionary-390055_1280.jpg" width="400px">
 
 !NOTES ---------------------------
 
@@ -144,9 +150,42 @@ Sujet qui fâche, sur lequel les développeurs ont souvent mauvaise conscience.
 
 
 
-!SLIDE smaller ===========================
+!SLIDE smallercode ===========================
 
-TODO : variable pour le nommage ?
+    hasClass: function( selector ) {
+        var className = " " + selector + " ",
+            i = 0,
+            l = this.length;
+        for ( ; i < l; i++ ) {
+            if ( this[i].nodeType === 1
+                    && (" " + this[i].className + " ")
+                        .replace(rclass, " ")
+                        .indexOf( className ) > -1 ) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+!SLIDE smallercode ===========================
+
+    hasClass: function( selector ) {
+        var className = " " + selector + " ",
+            i = 0,
+            l = this.length;
+        for ( ; i < l; i++ ) {
+            var isTag = this[i].nodeType === 1;
+            var isTagWithThatClass = isTag
+                    && (" " + this[i].className + " ")
+                        .replace(rclass, " ")
+                        .indexOf( className ) > -1;
+            if (isTagWithThatClass) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 
 !SLIDE bullets ===========================

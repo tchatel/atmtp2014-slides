@@ -37,6 +37,8 @@
 
     xhr.send(post || '');
 
+<br/>
+
 ### Groovy
 
     def streetName = user?.address?.street
@@ -57,7 +59,7 @@
 
 !SLIDE bullets ===========================
 
-## explicables en une phrase
+## explicable en une phrase
 * une seule responsabilité
 * minimum d'imbrications
 * un seul niveau d'abstraction
